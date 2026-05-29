@@ -1,0 +1,38 @@
+
+Pre-Requisites
+------------------
+Step 1: Create MAVEN Project
+Step 2: Add the required dependencies in the pom.xml
+Step 3: Create a Folder Structure
+
+------------------
+Step 4: Create Routes.java class ---> Contains URL's
+Step 5: Create UserEndPoints.java class ---> CRUD Methods Implementation / StoreEndPoints.java / PetEndPoints.java
+Step 6: Create User.java (POJO) Class 
+Step 7: Create UserTests.java Class --> Contains Test Methods (testcases)
+Step 8: Create data driven Test : Data in Excel Sheets and ExcelUtility File(Apache Poi) and DataProviders
+Step 9: Generate Extent Reports : ExtentReport dependency , Extent ReportUtility and testng.xml file
+Step 10: Add Logs : log4j2 dependency and log4j2.xml file (Location: 	src/test/resource) then update the logs inside the UserTests.java Class
+Step 11: Run tests using testng.xml - Create TestNg.xml files and execute
+Step 12: Run tests using pom.xml - required surefire plugin and complire plugin dependencies and execute (Eclipse level)
+step 13: Run tests pom.xml through cmd - Install Maven(build tool) on Windows - Download the Binary.zip file and exact then add it in system environment variables(Maven Software level - OS)
+Step 14: Commit code in local repository (git)   --> required git software
+Step 15: push code to remote repository (git hub)
+Step 16: run project in jenkins (from git - github)
+
+CI Process
+-------------
+Pre-requisites
+1)Install git S/W
+2)Create an account in github
+Working project location : C:\Users\sushma.g\eclipse-workspace\PetStoreAutomation
+
+1) git init --> create an empty local repository 
+2) git config --global user.name "sushma"  (very first)
+3) git config --global user.email "sushma.g@simplify3x.com" ()
+4) git status --> 
+5) git add -a --> adds all the files to staging area
+6) git add filename  --> add the specific file to staging area
+7) git add *.java  --> adds all the files which having the java extension
+
+
