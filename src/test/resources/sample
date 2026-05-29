@@ -24,15 +24,22 @@ CI Process
 -------------
 Pre-requisites
 1)Install git S/W
-2)Create an account in github
+2)Create an account in github (sushma.g@simplify3x.com and GitHub!@#$%12345)
+3)Create an empty repository then copy the repository url : https://github.com/sushmaganji123/PetStoreAutomation.git
 Working project location : C:\Users\sushma.g\eclipse-workspace\PetStoreAutomation
 
 1) git init --> create an empty local repository 
-2) git config --global user.name "sushma"  (very first)
-3) git config --global user.email "sushma.g@simplify3x.com" ()
-4) git status --> 
-5) git add -a --> adds all the files to staging area
-6) git add filename  --> add the specific file to staging area
-7) git add *.java  --> adds all the files which having the java extension
+2) git config --global user.name "sushma"  (very First Time)
+3) git config --global user.email "sushma.g@simplify3x.com" (Very First Time)
+4) git status --> check the current state of local repository. (Current branch, Modified files, New (untracked) files, Staged files ready to commit, Whether your branch is ahead/behind the remote branch)
+5) git add -A --> adds all the files to staging area
+   git add filename.java  --> add the specific file to staging area
+   git add *.java  --> adds all the files which having the java extension
+   git add foldername --> adds all the files which is present in that particular folder
+6) git commit -m "my api" ---> commits the tracked(staging) files to git repository (local)
+Push the code to remote respository
+7) git remote add origin "https://github.com/sushmaganji123/PetStoreAutomation.git" --> establishing the connection - local to remote repository (Very First Time)
+8) git push -u origin master ---> push the code to remote repository
 
+ 
 
