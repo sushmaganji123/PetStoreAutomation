@@ -29,17 +29,30 @@ Pre-requisites
 Working project location : C:\Users\sushma.g\eclipse-workspace\PetStoreAutomation
 
 1) git init --> create an empty local repository 
-2) git config --global user.name "sushma"  (very First Time)
-3) git config --global user.email "sushma.g@simplify3x.com" (Very First Time)
+2) git config --global user.name "sushma"  (very First Time)  --> set userdetails
+3) git config --global user.email "sushma.g@simplify3x.com" (Very First Time)  --> set userdetails
+   git config --global --list  --> to verify
 4) git status --> check the current state of local repository. (Current branch, Modified files, New (untracked) files, Staged files ready to commit, Whether your branch is ahead/behind the remote branch)
-5) git add -A --> adds all the files to staging area
+5) git add -A or git add .  --> adds all the files to staging area
    git add filename.java  --> add the specific file to staging area
    git add *.java  --> adds all the files which having the java extension
-   git add foldername --> adds all the files which is present in that particular folder
+   git add foldername (src/test/java) --> adds all the files which is present in that particular folder
 6) git commit -m "my api" ---> commits the tracked(staging) files to git repository (local)
 Push the code to remote respository
-7) git remote add origin "https://github.com/sushmaganji123/PetStoreAutomation.git" --> establishing the connection - local to remote repository (Very First Time)
-8) git push -u origin master ---> push the code to remote repository
-
- 
+7) git remote add origin "https://github.com/sushmaganji123/PetStoreAutomation.git" --> establishing the connection - local to remote repository (Very First Time) : Displays the remote repositories connected to the local repository.
+   git remote -v  --> to verify
+8) git push -u origin main ---> push the code to main branch in remote repository
+   git push           --> push the code to current branch in remote repository
+   git push --all origin   --> push the code to all the brances in remote respository
+   git push origin --tags  --> push the code to all the tags
+   git push origin v1.0  --> push to code to spectific tag
+9) git clone <repository-url> --> Clone Repository from remote to local repository   
+10) git pull origin main --> pull the code of remote repository from the main branch to local repository
+11) git branch feature-api --> create the new branch
+    git checkout feature-api or git switch feature-api --> switch to respective branch
+    git branch --> View Branches
+    git checkout -b feature-api  --> creates new branch and switch to that branch
+12) git Merge feature-api --> Used to combine changes from one branch into another branch : First switch to the target branch then Merge feature-api into main
+13) git log --oneline or git log --> Displays commit history in a compact format. It helps quickly identify commits and commit IDs.
+14) git diff ---> is used to compare file changes. It helps identify what modifications have been made before committing the code.
 
