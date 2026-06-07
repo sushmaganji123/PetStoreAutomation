@@ -40,10 +40,10 @@ Working project location : C:\Users\sushma.g\eclipse-workspace\PetStoreAutomatio
 6) git commit -m "my api" ---> commits the tracked(staging) files to git repository (local)
 Push the code to remote respository
 7) git remote add origin "https://github.com/sushmaganji123/PetStoreAutomation.git" --> establishing the connection - local to remote repository (Very First Time) : Displays the remote repositories connected to the local repository.
-   git remote -v  --> to verify
-8) git push -u origin main ---> push the code to main branch in remote repository
-   git push           --> push the code to current branch in remote repository
-   git push --all origin   --> push the code to all the brances in remote respository
+   git remote -v  --> View connected remote repositories
+8) git push -u origin main ---> Pushes the local main branch to the remote repository and sets the upstream (tracking) branch. After this, you can simply use git push.
+   git push           --> Pushes the current branch to its configured remote tracking branch.
+   git push --all origin   --> push the code to all the branches in remote respository
    git push origin --tags  --> push the code to all the tags
    git push origin v1.0  --> push to code to spectific tag
 9) git clone <repository-url> --> Clone Repository from remote to local repository   
@@ -52,23 +52,19 @@ Push the code to remote respository
     git checkout feature-api or git switch feature-api --> switch to respective branch
     git branch --> View Branches
     git checkout -b feature-api  --> creates new branch and switch to that branch
-12) git Merge feature-api --> Used to combine changes from one branch into another branch : First switch to the target branch then Merge feature-api into main
+12) git Merge feature-api --> Used to combine changes from one branch into another branch : First switch to the target branch then Merge feature-api into main then push the code to target branch only
 13) git log --oneline or git log --> Displays commit history in a compact format. It helps quickly identify commits and commit IDs.
 14) git diff ---> is used to compare file changes. It helps identify what modifications have been made before committing the code.
-<<<<<<< Updated upstream
-
-=======
 15) git stash --> the untracked files temporarily saved where can switch to branch and pull the laest code without losing the work
     git stash list --> shows the list of stash
     git stash pop -->restore and remove stash
     git stash apply --> restore and keep stash
-16) git cherry-pick <commit-id> --> s used to apply a specific commit from one branch to another branch without merging the entire branch. It is commonly used for hotfixes and urgent production fixes.    
+16) git cherry-pick <commit-id> --> s used to apply a specific commit from one branch to another branch without merging the entire branch. It is commonly used for hotfixes and urgent production fixes.
     to get the commit-id : git log --online
  17) git push origin --delete feature-login --> Delete the respective branch in remote
  18) git branch -d feature-login ---> Delete the respective branch in local
  19) git branch -D feature-login ---> Delete the respective branch in local (Disable this message with "git config set advice.forceDeleteBranch false")
- 
- A Pull Request (PR) is a code review mechanism used in GitHub, Azure DevOps, and Bitbucket. 
+
+ A Pull Request (PR) is a code review mechanism used in GitHub, Azure DevOps, and Bitbucket.
  After completing development in a feature branch, we create a PR to merge the changes into the main or develop branch.
  Team members review the code, provide comments if necessary, and once approved, the PR is merged.
->>>>>>> Stashed changes
