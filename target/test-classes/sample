@@ -65,8 +65,8 @@ Push the code to remote respository
 16) git cherry-pick <commit-id> --> s used to apply a specific commit from one branch to another branch without merging the entire branch. It is commonly used for hotfixes and urgent production fixes.    
     to get the commit-id : git log --online
  17) git push origin --delete feature-login --> Delete the respective branch in remote
- 18) git branch -d feature-login ---> Delete the respectice branch in local
- 
+ 18) git branch -d feature-login ---> Delete the respective branch in local
+ 19) git branch -D feature-login ---> Delete the respective branch in local (Disable this message with "git config set advice.forceDeleteBranch false")
  
  A Pull Request (PR) is a code review mechanism used in GitHub, Azure DevOps, and Bitbucket. 
  After completing development in a feature branch, we create a PR to merge the changes into the main or develop branch.
