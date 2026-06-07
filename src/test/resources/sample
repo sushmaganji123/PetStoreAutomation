@@ -55,4 +55,20 @@ Push the code to remote respository
 12) git Merge feature-api --> Used to combine changes from one branch into another branch : First switch to the target branch then Merge feature-api into main
 13) git log --oneline or git log --> Displays commit history in a compact format. It helps quickly identify commits and commit IDs.
 14) git diff ---> is used to compare file changes. It helps identify what modifications have been made before committing the code.
+<<<<<<< Updated upstream
 
+=======
+15) git stash --> the untracked files temporarily saved where can switch to branch and pull the laest code without losing the work
+    git stash list --> shows the list of stash
+    git stash pop -->restore and remove stash
+    git stash apply --> restore and keep stash
+16) git cherry-pick <commit-id> --> s used to apply a specific commit from one branch to another branch without merging the entire branch. It is commonly used for hotfixes and urgent production fixes.    
+    to get the commit-id : git log --online
+ 17) git push origin --delete feature-login --> Delete the respective branch in remote
+ 18) git branch -d feature-login ---> Delete the respectice branch in local
+ 
+ 
+ A Pull Request (PR) is a code review mechanism used in GitHub, Azure DevOps, and Bitbucket. 
+ After completing development in a feature branch, we create a PR to merge the changes into the main or develop branch.
+ Team members review the code, provide comments if necessary, and once approved, the PR is merged.
+>>>>>>> Stashed changes
